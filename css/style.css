@@ -198,6 +198,7 @@
     position: relative;
     flex: 0 1 39%;
     margin: initial;
+    justify-content: flex-start;
   }
 
   .link--prev,
