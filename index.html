@@ -15,12 +15,15 @@
 
 <body class="page">
   <main class="page__content">
-    <article class="card card--selected">
+    <article class="card active">
       <div class="container">
         <div class="card__nav">
           <img src="/img/image-tanya.jpg" alt="Portrait of Tanya Sinclair" class="card__img">
-          <button class="link link--prev"><img src="/img/icon-prev.svg" alt="previous testimonial" class="img img--icon-prev"></button>
-          <button class="link link--next"><img src="/img/icon-next.svg" alt="next testimonial" class="img img--icon-next"></button>
+          <button class="link link--prev" onclick="nextCard(-1)" tabindex="0"><img src="/img/icon-prev.svg"
+              alt="previous testimonial" class="img img--icon-prev"></button>
+          <button class="link link--next" onclick="nextCard(1)" tabindex="1"><img src="/img/icon-next.svg" alt="next testimonial"
+              class="img img--icon-next"></button>
+              <span class="tooltip">Or use left and right arrowkeys </span>
         </div>
         <div class="card__copy">
           <p class="card__quote">
@@ -39,7 +42,14 @@
 
     <article class="card">
       <div class="container">
-        <img src="/img/image-john.jpg" alt="portrait of John Tarkpor" class="card__img">
+        <div class="card__nav">
+          <img src="/img/image-john.jpg" alt="portrait of John Tarkpor" class="card__img">
+          <button class="link link--prev" onclick="nextCard(-1)" tabindex="0"><img src="/img/icon-prev.svg"
+              alt="previous testimonial" class="img img--icon-prev"></button>
+          <button class="link link--next" onclick="nextCard(1)" tabindex="1"><img src="/img/icon-next.svg" alt="next testimonial"
+              class="img img--icon-next"></button>
+          <span class="tooltip">Or use left and right arrowkeys </span>
+            </div>
         <div class="card__copy">
           <p class="card__quote">
             “ If you want to lay the best foundation possible I’d recommend taking this course.
@@ -55,6 +65,7 @@
         </div>
       </div>
     </article>
+
   </main>
   <footer class="page__footer">
     <p class="attribution">
